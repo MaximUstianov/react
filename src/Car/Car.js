@@ -2,15 +2,14 @@ import React from 'react'
 import Radium from "radium";
 import './Car.css'
 
-const Car =  props => {
+const Car = props => {
     const inputClasses = ['input']
     if (props.name !== '') {
         inputClasses.push('green')
-    }
-    else {
+    } else {
         inputClasses.push('red')
     }
-    if(props.name.length > 4){
+    if (props.name.length > 4) {
         inputClasses.push('bold')
     }
     const style = {
@@ -33,4 +32,4 @@ const Car =  props => {
 
     )
 }
- export default Radium(Car)
+export default Radium(Car)

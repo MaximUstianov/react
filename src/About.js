@@ -1,15 +1,17 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 
 class About extends Component {
     constructor() {
         super();
-        this.state = { data: [] };
+        this.state = {data: []};
     }
+
     async componentDidMount() {
         const response = await fetch(`https://api.coinmarketcap.com/v1/ticker/?limit=10`);
         const json = await response.json();
-        this.setState({ data: json });
+        this.setState({data: json});
     }
+
     render() {
         return (
             <div className="App">
@@ -22,4 +24,5 @@ class About extends Component {
         );
     }
 }
+
 export default About;

@@ -7,9 +7,6 @@ import registerServiceWorker from './registerServiceWorker';
 import {Route, BrowserRouter} from 'react-router-dom';
 
 
-
-
-
 ReactDOM.render(<BrowserRouter>
         <Route path="/" exact component={App}/>
         <Route path="/about" component={About}/>
