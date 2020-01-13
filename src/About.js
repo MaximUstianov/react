@@ -7,7 +7,7 @@ class About extends Component {
     }
 
     async componentDidMount() {
-        const response = await fetch(`https://api.coinmarketcap.com/v1/ticker/?limit=10`);
+        const response = await fetch(`https://api.coinmarketcap.com/v1/ticker/?limit=20`);
         const json = await response.json();
         this.setState({data: json});
     }
