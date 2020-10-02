@@ -16,6 +16,7 @@ class App extends Component {
             <div>
                 <span><a href="/about">Spreadsheet</a></span>
                 <Table/>
+
             </div>
         );
     }
